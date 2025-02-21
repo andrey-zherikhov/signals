@@ -1,5 +1,4 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   inject,
@@ -19,25 +18,7 @@ import { SignalComponent } from './components/signal/signal.component';
   styleUrl: './example3.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class Example3Component implements AfterViewInit {
+export class Example3Component {
   protected highlightComponent = inject(HighlightComponent);
-
-  constructor() {
-  }
-
-  ngAfterViewInit() {
-
-    // setTimeout(() => {
-    //   this.ngZone.runOutsideAngular(() => {
-    //     this.cd.markForCheck();
-    //     this.cd.markForCheck();
-    //     this.cd.markForCheck();
-    //     this.cd.markForCheck();
-    //     this.cd.markForCheck();
-    //     this.cd.markForCheck();
-    //     this.cd.markForCheck();
-    //   })
-    // }, 2000)
-  }
 
 }
