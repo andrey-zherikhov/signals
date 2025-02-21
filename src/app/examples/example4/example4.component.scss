@@ -1,0 +1,24 @@
+:host {
+  height: 100%;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.block {
+  width: 200px;
+  height: 100px;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: #ff9999;
+  border-radius: .2rem;
+
+  &._template {
+    background-color: #8585ff;
+  }
+}
+
+.counter {
+  margin-top: .5rem;
+}

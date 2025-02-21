@@ -1,0 +1,17 @@
+:host {
+  border-radius: .2rem;
+  display: block;
+  position: relative;
+}
+
+.counter {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  color: rgb(115, 170, 255);
+  font-size: 5rem;
+}

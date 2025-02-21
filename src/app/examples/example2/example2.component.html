@@ -1,0 +1,25 @@
+{{ highlightComponent.highlight() }}
+
+<div class="block _template" (mousemove)="noop()">
+  Template listener
+</div>
+
+<div #blockNoop class="block">
+  Rxjs listener
+</div>
+
+<div>
+  <div class="block _template" (mousemove)="incTemplateEventIndex()">
+    Template listener with signal change
+  </div>
+
+  <div class="counter">Event index: {{ templateEventIndex() }}</div>
+</div>
+
+<div>
+  <div #block class="block">
+    Rxjs listener with signal change
+  </div>
+
+  <div class="counter">Event index: {{ rxjsEventIndex() }}</div>
+</div>

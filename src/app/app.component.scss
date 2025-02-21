@@ -1,0 +1,46 @@
+:host {
+  padding: 2rem;
+  height: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: max-content 1fr;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  border: thin solid #efefef;
+  border-radius: .2rem;
+  overflow: auto;
+
+  a {
+    display: block;
+    padding: 1rem 4rem;
+    color: #707071;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color .2s, color .2s;
+
+    &:hover {
+      color: #383839;
+      background-color: rgba(black, .02);
+    }
+
+    &._active {
+      color: #383839;
+      background-color: #e9fae9;
+      cursor: default;
+    }
+  }
+
+  a + a {
+    border-top: thin solid #efefef;
+  }
+}
+
+main {
+  border-radius: .2rem;
+  border: thin solid #efefef;
+}

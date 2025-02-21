@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  color: #383839;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: unset;
+  border: none;
+  box-sizing: border-box;
+}
+
+button {
+  padding: .5rem;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: .2rem;
+  border: thin solid #c4f1c4;
+  background-color: #fdfffd;
+  cursor: pointer;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: #e9fae9;
+  }
+
+  &:active {
+    background-color: #d9f4d9;
+  }
+}
