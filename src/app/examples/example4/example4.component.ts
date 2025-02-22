@@ -24,11 +24,29 @@ export class Example4Component {
     this.cd.markForCheck();
   }
 
+  triggerMarkForCheckWithTimeout(): void {
+    setTimeout(() => {
+      this.cd.markForCheck();
+      this.cd.markForCheck();
+      this.cd.markForCheck();
+      this.cd.markForCheck();
+    }, 1000);
+  }
+
   triggerDetectChanges(): void {
     this.cd.detectChanges();
     this.cd.detectChanges();
     this.cd.detectChanges();
     this.cd.detectChanges();
+  }
+
+  triggerDetectChangesWithTimeout(): void {
+    setTimeout(() => {
+      this.cd.detectChanges();
+      this.cd.detectChanges();
+      this.cd.detectChanges();
+      this.cd.detectChanges();
+    }, 1000);
   }
 
 }

@@ -1,9 +1,4 @@
-<div class="navigation">
-  <a routerLink="1" routerLinkActive="_active">Example 1</a>
-  <a routerLink="2" routerLinkActive="_active">Example 2</a>
-  <a routerLink="3" routerLinkActive="_active">Example 3</a>
-  <a routerLink="4" routerLinkActive="_active">Example 4</a>
-</div>
+<app-navigation [routes]="routes" />
 
 <main>
   <app-highlight [showCounter]="!!showCounter()">

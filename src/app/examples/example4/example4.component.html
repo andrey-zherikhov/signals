@@ -1,15 +1,41 @@
 {{ highlightComponent.highlight() }}
 
 <button (click)="triggerMarkForCheck()">
-  this.cd.markForCheck();
-  this.cd.markForCheck();
-  this.cd.markForCheck();
-  this.cd.markForCheck();
+  <code>
+    this.cd.markForCheck(); <br>
+    this.cd.markForCheck(); <br>
+    this.cd.markForCheck(); <br>
+    this.cd.markForCheck();
+  </code>
 </button>
 
 <button (click)="triggerDetectChanges()">
-  this.cd.detectChanges();
-  this.cd.detectChanges();
-  this.cd.detectChanges();
-  this.cd.detectChanges();
+  <code>
+    this.cd.detectChanges(); <br>
+    this.cd.detectChanges(); <br>
+    this.cd.detectChanges(); <br>
+    this.cd.detectChanges(); <br>
+  </code>
+</button>
+
+<button (click)="triggerMarkForCheckWithTimeout()">
+  <code>
+    setTimeout(() => &#123; <br>
+      this.cd.markForCheck(); <br>
+      this.cd.markForCheck(); <br>
+      this.cd.markForCheck(); <br>
+      this.cd.markForCheck(); <br>
+    &#125;, 1000);
+  </code>
+</button>
+
+<button (click)="triggerDetectChangesWithTimeout()">
+  <code>
+    setTimeout(() => &#123; <br>
+      this.cd.detectChanges(); <br>
+      this.cd.detectChanges(); <br>
+      this.cd.detectChanges(); <br>
+      this.cd.detectChanges(); <br>
+    &#125;, 1000);
+  </code>
 </button>
